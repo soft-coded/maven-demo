@@ -7,13 +7,15 @@ class Employee {
     private String deptName;
     private double salary;
 
-    Employee() {}
-    Employee(int id, String name, int age, String deptName, double salary ) {
+    Employee() {
+    }
+
+    Employee(int id, String name, int age, String deptName, double salary) {
         this.id = id;
-        this.name=name;
-        this.age=age;
-        this.deptName= deptName;
-        this.salary=salary;
+        this.name = name;
+        this.age = age;
+        this.deptName = deptName;
+        this.salary = salary;
     }
 
     public Employee setId(int id) {
@@ -56,11 +58,12 @@ class Employee {
                 '}';
     }
 }
+
 public class BuilderDesignPattern {
 
     public static void main(String[] args) {
-        //Employee emp = new Employee(1001, "Sam");
-       Employee emp = new Employee().setId(1002).setName("Krish").getEmployee();
+        // Employee emp = new Employee(1001, "Sam");
+        Employee emp = new Employee().setId(1002).setName("Krish").getEmployee();
         System.out.println(emp);
     }
 }
