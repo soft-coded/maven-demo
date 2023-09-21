@@ -1,10 +1,8 @@
 package org.example;
 
 class Employee {
-    private int id;
-    private String name;
-    private int age;
-    private String deptName;
+    private int id, age;
+    private String name, deptName;
     private double salary;
 
     Employee() {
