@@ -62,7 +62,6 @@ class Employee {
 public class BuilderDesignPattern {
 
     public static void main(String[] args) {
-        // Employee emp = new Employee(1001, "Sam");
         Employee emp = new Employee().setId(1002).setName("Krish").getEmployee();
         System.out.println(emp);
     }
