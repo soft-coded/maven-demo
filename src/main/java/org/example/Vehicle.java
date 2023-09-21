@@ -32,30 +32,30 @@ class Student implements Cloneable {
 }
 
 public class Vehicle implements Cloneable {
-    List<String> vehicalList = new ArrayList<>();
+    List<String> vehicleList = new ArrayList<>();
 
     Vehicle() {
     }
 
-    Vehicle(List<String> vehicalList) {
-        this.vehicalList = vehicalList;
+    Vehicle(List<String> vehicleList) {
+        this.vehicleList = vehicleList;
     }
 
     void loadVehicles() {
         // db logic to get list of vehicles
-        vehicalList.add("Splender");
-        vehicalList.add("Activa");
-        vehicalList.add("Yamaha");
+        vehicleList.add("Splender");
+        vehicleList.add("Activa");
+        vehicleList.add("Yamaha");
     }
 
-    List<String> getVehicalList() {
-        return vehicalList;
+    List<String> getvehicleList() {
+        return vehicleList;
     }
 
     @Override
     public Vehicle clone() {
         List<String> vList = new ArrayList<>();
-        vList.addAll(vehicalList);
+        vList.addAll(vehicleList);
         return new Vehicle(vList);
     }
 }
@@ -65,17 +65,17 @@ class Test2 {
 
         Vehicle v1 = new Vehicle();
         v1.loadVehicles();
-        System.out.println(v1.getVehicalList());
+        System.out.println(v1.getvehicleList());
 
         Vehicle v2 = v1.clone();
-        System.out.println(v2.getVehicalList());
-        v2.getVehicalList().add("Chetak");
-        System.out.println(v1.getVehicalList());
-        System.out.println(v2.getVehicalList());
+        System.out.println(v2.getvehicleList());
+        v2.getvehicleList().add("Chetak");
+        System.out.println(v1.getvehicleList());
+        System.out.println(v2.getvehicleList());
         Vehicle v3 = v1.clone();
-        System.out.println(v3.getVehicalList());
-        v3.getVehicalList().remove("Splender");
-        System.out.println(v3.getVehicalList());
+        System.out.println(v3.getvehicleList());
+        v3.getvehicleList().remove("Splender");
+        System.out.println(v3.getvehicleList());
 
         /*
          * Student std1 = new Student();
