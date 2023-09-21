@@ -49,7 +49,6 @@ public class Vehicle implements Cloneable {
     }
 
     List<String> getVehicalList() {
-
         return vehicalList;
     }
 
