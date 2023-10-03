@@ -23,7 +23,7 @@ class Employee {
 
     public Employee setName(String name) {
         this.name = name;
-        // return this;
+        return this;
     }
 
     public Employee setAge(int age) {
