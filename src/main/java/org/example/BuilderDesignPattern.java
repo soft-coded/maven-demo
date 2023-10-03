@@ -37,7 +37,7 @@ class Employee {
     }
 
     public Employee setSalary(double salary) {
-        // this.salary = salary;
+        this.salary = salary;
         return this;
     }
 
